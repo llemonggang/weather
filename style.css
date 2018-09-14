@@ -1,3 +1,15 @@
-ul {
+.container {
+	font-family: 'Montserrat', sans-serif;
+	margin: auto;
+}
+
+#week {
 	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+.day {
+	display: inline;
+	padding: 15px;
 }
