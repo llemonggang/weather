@@ -12,7 +12,7 @@ $( document ).ready(function() {
   d = new Date(); 
   x = d.getDay();
   currentDay = (days[x]);
-  return currentDay
+  console.log(currentDay
   })();
 
 
@@ -31,23 +31,23 @@ $( document ).ready(function() {
         data.list[4],
         data.list[5],
         data.list[6]
-      ]
+      ];
       console.log(weekdays)
-      console.log(currentDay)
-      if (currentDay === 0) {
-        return 'Friday';
-      } else if (currentDay === 1) {
-        return 'Saturday';
-      } else if (currentDay === 2) {
-        return 'Sunday';
-      } else if (currentDay === 3) {
-        return 'Monday';
-      } else if (currentDay === 4) {
-        return 'Tuesday';
-      } else if (currentDay === 5) {
-        return 'Wednesday';
+
+      if (currentDay === 'Friday') {
+        console.log(0);
+      } else if (currentDay === 'Saturday') {
+        console.log(1);
+      } else if (currentDay === 'Sunday') {
+        console.log(2);
+      } else if (currentDay === 'Monday') {
+        console.log(3);
+      } else if (currentDay === 'Tuesday') {
+        console.log(4);
+      } else if (currentDay === 'Wednesday') {
+        console.log(5);
       } else {
-        return 'Thursday';
+        console.log(6);
       }
   });
 })();
