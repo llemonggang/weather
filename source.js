@@ -12,7 +12,7 @@ $( document ).ready(function() {
   d = new Date(); 
   x = d.getDay();
   currentDay = (days[x]);
-  console.log(currentDay
+  console.log(currentDay)
   })();
 
 
@@ -35,24 +35,23 @@ $( document ).ready(function() {
       console.log(weekdays)
 
       if (currentDay === 'Friday') {
-        console.log(0);
+        return $('#friday').addClass('currentDay')
       } else if (currentDay === 'Saturday') {
-        console.log(1);
+        return $('#saturday').addClass('currentDay')
       } else if (currentDay === 'Sunday') {
-        console.log(2);
+        return $('#sunday').addClass('currentDay')
       } else if (currentDay === 'Monday') {
-        console.log(3);
+        return $('#monday').addClass('currentDay')
       } else if (currentDay === 'Tuesday') {
-        console.log(4);
+        return $('#tuesday').addClass('currentDay')
       } else if (currentDay === 'Wednesday') {
-        console.log(5);
+        return $('#wednesday').addClass('currentDay')
       } else {
-        console.log(6);
+        return $('#thursday').addClass('currentDay')
       }
   });
 })();
 
-// find currentDay string and match id, then set currentDay class
 
 // currentDay when selected
 $('.day').click(function(e) {
